@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="추천 친구 목록"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="홍길동"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="김영희"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button2"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="김철수"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button3"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="이지은"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button4"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="김고은"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button5"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button5"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="유디아"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button6"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button6"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <!--프로필 사진-->
+        <ImageView
+            android:id="@+id/profile7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_android"/>
+
+        <!--이름-->
+        <TextView
+            android:id="@+id/name7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="임지원"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <!--팔로우 언팔로우 버튼-->
+
+
+        <Button
+            android:id="@+id/f_button7"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="팔로우" />
+
+        <Button
+            android:id="@+id/f_view_button7"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="언팔로우" />
+
+    </LinearLayout>
+
+    <!--구분선-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+
+
+
+
+</LinearLayout>
