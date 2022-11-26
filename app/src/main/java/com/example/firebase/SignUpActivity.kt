@@ -36,7 +36,7 @@ class SignUpActivity : AppCompatActivity() {
 
         binding.signupBtn.setOnClickListener{
 
-            val name = binding.nameEdit.toString().trim()
+            val name = binding.nameEdit.text.toString().trim()
             val Date = binding.dateEdit.text.toString().trim()
             val email = binding.emailEdit.text.toString().trim()
             val password = binding.passwordEdit.text.toString().trim()
