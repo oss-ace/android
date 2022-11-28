@@ -6,15 +6,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="추천 친구 목록"
-        android:textSize="20sp"
-        android:textColor="#000"
+        android:textSize="17sp"
+        android:textColor="#0000ff"
         android:textStyle="bold"/>
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
@@ -24,7 +30,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -77,7 +83,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -127,7 +133,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -179,7 +185,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -231,7 +237,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -284,7 +290,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 
@@ -337,7 +343,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:gravity="center_vertical"
         android:padding="20dp">
 

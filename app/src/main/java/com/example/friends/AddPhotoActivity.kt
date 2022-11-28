@@ -15,6 +15,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_add_photo.*
+import java.sql.DriverManager
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -33,6 +34,8 @@ class AddPhotoActivity : AppCompatActivity() {
 
         val col=db.collection("titles")
 
+        //스토리지 초기화
+        storage = FirebaseStorage.getInstance()
         //게시물 몇개있는지 검사후 num 값 셋팅
         col.whereGreaterThanOrEqualTo("number",0).get()
             .addOnSuccessListener {
@@ -57,17 +60,37 @@ class AddPhotoActivity : AppCompatActivity() {
                         num="${d["number"]}".toInt()
                     }
                 }
+                if(num>=6){
+                    Toast.makeText(this, "게시물 리스트를 새로 갱신합니다", Toast.LENGTH_LONG).show()
+                    col.document("title1").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+                    col.document("title2").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+                    col.document("title3").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+                    col.document("title4").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+                    col.document("title5").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+                    col.document("title6").delete()
+                        .addOnSuccessListener { DriverManager.println("삭제") }
+
+                    delete_image()
+                    num=0
+                }
             }
 
 
 
         //스토리지 초기화
-        storage = FirebaseStorage.getInstance()
+       // storage = FirebaseStorage.getInstance()
 
         //앨범열기
         var photoPickerIntent = Intent(Intent.ACTION_PICK)
         photoPickerIntent.type = "image/*"
         startActivityForResult(photoPickerIntent, PICK_IMAGE_FROM_ALBUM)
+
+
 
         //버튼에 이벤트넣기
             var button2 = findViewById<Button>(R.id.button2)
@@ -127,6 +150,16 @@ class AddPhotoActivity : AppCompatActivity() {
         }
 
     }
+    fun delete_image(){
+        storage?.getReference()?.child("images")?.child("post1")?.delete()
+        storage?.getReference()?.child("images")?.child("post2")?.delete()
+        storage?.getReference()?.child("images")?.child("post3")?.delete()
+        storage?.getReference()?.child("images")?.child("post4")?.delete()
+        storage?.getReference()?.child("images")?.child("post5")?.delete()
+        storage?.getReference()?.child("images")?.child("post6")?.delete()
+        println("이미지 삭제")
+    }
+
 
 
 }

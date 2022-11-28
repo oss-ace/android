@@ -303,7 +303,7 @@ class MainActivity : AppCompatActivity() {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),1)
 
 
-            Toast.makeText(this, "한팀당 하나의 게시물만 포스팅해주세요", Toast.LENGTH_LONG).show()
+
                 val secondIntent = Intent(this, AddPhotoActivity::class.java)
                 startActivity(secondIntent)
 
